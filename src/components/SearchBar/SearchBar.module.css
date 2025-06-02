@@ -1,0 +1,73 @@
+.container {
+    width: 100%;
+    max-width: 1158px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: white;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    z-index: 3;
+    position: sticky;
+}
+
+.form {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.input {
+    width: 100%;
+    background-color: #eee;
+    border-radius: 24px;
+    border: 1px solid #eee;
+    box-shadow: 0px 0px 0px 1px #eee;
+    padding: 8px 16px 8px 40px;
+    outline: transparent;
+    color: black;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* .input:hover, */
+.input:active,
+.input:focus {
+    background-color: white;
+}
+
+.searchButton {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    outline: none;
+    padding: 12px 0 12px 12px;
+    cursor: pointer;
+    color: #555;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon:hover,
+.icon:focus,
+.icon:active {
+    color: #000;
+    transform: scale(1.05);
+}
