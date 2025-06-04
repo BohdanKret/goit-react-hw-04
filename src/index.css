@@ -40,15 +40,6 @@ img {
   height: auto;
 }
 
-/* .container {
-  width: 100%;
-  max-width: 1158px;
-  max-width: 320px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin: 0 auto;
-} */
-
 .icons {
   fill: black;
 }
@@ -92,7 +83,8 @@ button:hover {
 
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  /* outline: 4px auto -webkit-focus-ring-color; */
+  outline: none;
 }
 
 @media (prefers-color-scheme: light) {

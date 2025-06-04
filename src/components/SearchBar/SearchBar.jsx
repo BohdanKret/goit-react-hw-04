@@ -12,7 +12,10 @@ export default function SearchBar({ onSearch }) {
             topic: "",
           }}
           onSubmit={(values, actions) => {
-            values.topic === "" && toast("Here is your toast.");
+            values.topic === "" && toast("Please fill in the search field!", {
+              position: 'top-left',
+              style: {},
+            });
             onSearch(values.topic);
             actions.resetForm();
           }}
@@ -32,7 +35,7 @@ export default function SearchBar({ onSearch }) {
           </Form>
         </Formik>
       </div>
-      <Toaster />
+      <Toaster position="top-left" />
     </header>
   );
 }

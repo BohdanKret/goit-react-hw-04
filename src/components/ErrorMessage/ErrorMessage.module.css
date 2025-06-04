@@ -1,0 +1,19 @@
+.errorContainer {
+    width: 100%;
+    max-width: 1158px;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+}
+
+.icon {
+    fill: red;
+    width: 24px;
+    height: 24px;
+}
+
+.errorMessage {
+    font-size: 24px;
+    font-weight: 500;
+}

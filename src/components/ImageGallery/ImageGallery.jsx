@@ -5,11 +5,11 @@ export default function ImageGallery({ images }) {
   return (
     <section className={css.imageGallery}>
       <div className={css.container}>
-        <ul>
+        <ul className={css.imageGalleryList}>
           {images.map((image) => {
             return (
-              <li key={image.id}>
-                <ImageCard alt={image.alt_description} />
+              <li className={css.imageGalleryItem} key={image.id}>
+                <ImageCard likes={image.likes} src={image.urls} alt={image.alt_description} />
               </li>
             );
           })}

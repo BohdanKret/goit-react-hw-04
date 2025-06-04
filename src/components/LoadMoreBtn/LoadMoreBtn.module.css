@@ -1,0 +1,25 @@
+.buttomWrapper {
+    width: 100%;
+    max-width: 1158px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 36px;
+    margin: 0 auto;
+}
+
+.buttonLoadMore {
+    width: 100%;
+    border: 1px solid #eee;
+    padding: 15px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .08);
+    background-color: #eee;
+    color: #555;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.buttonLoadMore:hover,
+.buttonLoadMore:active {
+    background-color: white;
+    color: black;
+    border-color: black;
+}

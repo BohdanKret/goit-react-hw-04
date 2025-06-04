@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import css from "./App.module.css";
-import toast, { Toaster } from "react-hot-toast";
 import SearchBar from "../SearchBar/SearchBar";
 import fetchImages from "../../unsplash-api";
 import Loader from "../Loader/Loader";
@@ -50,7 +49,7 @@ function App() {
   }, [topic, curretPage]);
 
   const haveImages = images.length > 0;
-  const isLastPage = curretPage !== totalPages;
+  const isLastPage = curretPage === totalPages;
 
   return (
     <>
@@ -61,7 +60,6 @@ function App() {
       {haveImages && !isLoading && !isLastPage && (
         <LoadMoreBtn onClick={incrementPage} />
       )}
-      <Toaster />
     </>
   );
 }
