@@ -13,7 +13,7 @@ export default function ImageGallery({ images, onImageClick }) {
                   likes={image.likes}
                   src={image.urls}
                   alt={image.alt_description}
-                  onClick={() => onImageClick(image.urls.full)}
+                  onClick={() => onImageClick(image)}
                 />
               </li>
             );

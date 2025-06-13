@@ -1,12 +1,59 @@
 .imageWrapper {
+    width: 100%;
     max-width: 856px;
-    overflow: hidden;
+    padding-bottom: 16px;
 }
 
 .image {
     width: 100%;
-    /* object-fit: cover; */
+    height: 676px;
+    object-fit: contain;
 }
 
+.authorContainer {
+    display: flex;
+    justify-content: space-between;
+}
 
-/* ImageModal.module.css */
+.authorData {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.authorImage {
+    border-radius: 50%;
+}
+
+.authorInfo a {
+    color: inherit;
+}
+
+.authorSiteButton {
+    color: #555;
+    background-color: #eee;
+    border-radius: 24px;
+    border: 1px solid #eee;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .08);
+    padding: 8px 16px;
+    font-family: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.authorSiteButton:hover,
+.authorSiteButton:active,
+.authorSiteButton:focus {
+    color: black;
+    background-color: white;
+}
+
+.likesWrapper {
+    padding: 8px;
+    text-align: center;
+}
+
+.likes {
+    font-weight: bold;
+}
